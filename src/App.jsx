@@ -1,4 +1,4 @@
-import MainLayout from './layout/mainlayout'
+import MainLayout from './layout/MainLayout'
 import Footer from './components/Footer'
 import './App.css'
 function App() {
