@@ -32,9 +32,9 @@ const newsInfo = [
 
 const RecentNews = () => {
   return (
-    <section className="mt-20">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Recent News</h2>
-      <p className="text-gray-500 text-sm mb-8">
+    <section className="mt-10 md:mt-20">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Recent News</h2>
+      <p className="text-gray-500 text-xs md:text-sm mb-6 md:mb-8">
         Bangladesh 2.0 aims to redefine the nation's trajectory by embracing
         cutting-edge technology, promoting inclusive growth, and ensuring
         sustainability. With initiatives in renewable energy, digital

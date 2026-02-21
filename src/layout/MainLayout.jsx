@@ -15,7 +15,7 @@ import Speach from "../components/Speach";
 
 const MainLayout = () => {
   return (
-    <div className="main-layout max-w-7xl mx-auto">
+    <div className="main-layout max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center py-4">
         <h1 className="text-3xl font-bold">Bangladesh 2.0</h1>
         <SignedOut>
@@ -32,8 +32,8 @@ const MainLayout = () => {
 
       <Hero />
 
-      <div className="mt-20">
-        <h2 className="text-3xl font-bold mb-4 font-sans">
+      <div className="mt-10 md:mt-20">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 font-sans">
           Pillar's of "Bangladesh 2.0"
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -44,11 +44,11 @@ const MainLayout = () => {
         </div>
       </div>
 
-      <div className="mt-20">
-        <h2 className="text-3xl font-bold mb-4 font-sans">
+      <div className="mt-10 md:mt-20">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 font-sans">
           The Vision of Future
         </h2>
-        <p className="text-md text-gray-500 font-semibold mb-6">
+        <p className="text-sm md:text-md text-gray-500 font-semibold mb-6">
           Bangladesh 2.0 aims to redefine the nation's trajectory by embracing
           cutting-edge technology, promoting inclusive growth, and ensuring
           sustainability. With initiatives in renewable energy, digital

@@ -3,14 +3,14 @@ import bgimg from "../assets/quote-bg.png";
 
 const Speach = () => {
     return (
-        <section className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm mt-10">
+        <section className="bg-white border border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm mt-10">
             <div className="relative">
                 <img
                     src={bgimg}
                     alt="Quote"
-                    className="absolute left-0 top-0 w-18 h-18 opacity-100"
+                    className="absolute left-0 top-0 w-12 h-12 md:w-18 md:h-18 opacity-100"
                 />
-                <p className="text-gray-700 text-md leading-relaxed  pt-4 md:pt-6">
+                <p className="text-gray-700 text-sm md:text-md leading-relaxed pt-10 md:pt-6">
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas,
                     ducimus labore sequi quos deserunt optio id repellendus tempora veniam
                     amet porro corporis exercitationem numquam debitis culpa laudantium
