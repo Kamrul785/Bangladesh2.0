@@ -1,3 +1,9 @@
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 import Card from "../components/Card";
 import CardWithButton from "../components/CardWithButton";
 import Donation from "../components/Donation";
@@ -11,10 +17,17 @@ const MainLayout = () => {
   return (
     <div className="main-layout max-w-7xl mx-auto">
       <div className="flex justify-between items-center py-4">
-        <h1 className="text-3xl font-bold mb-4">Bangladesh 2.0</h1>
-        <button className="bg-white text-green-800 font-bold text-lg py-3 px-8 border-2 shadow-lg border-green-800 rounded-lg">
-          Sign In
-        </button>
+        <h1 className="text-3xl font-bold">Bangladesh 2.0</h1>
+        <SignedOut>
+          <SignInButton mode="modal">
+            <button className="bg-white text-green-800 font-semibold text-lg py-2 px-8 border border-green-800 rounded-lg hover:bg-green-800 hover:text-white transition-colors">
+              Sign In
+            </button>
+          </SignInButton>
+        </SignedOut>
+        <SignedIn>
+          <UserButton afterSignOutUrl="/" />
+        </SignedIn>
       </div>
 
       <Hero />
